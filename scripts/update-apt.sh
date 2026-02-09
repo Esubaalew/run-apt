@@ -128,6 +128,6 @@ GPG_COMMON=(--batch --yes --pinentry-mode loopback --passphrase "$APT_GPG_PASSPH
 gpg "${GPG_COMMON[@]}" -abs -o "$RELEASE_FILE.gpg" "$RELEASE_FILE"
 gpg "${GPG_COMMON[@]}" --clearsign -o "$DOCS_DIR/dists/$DIST/InRelease" "$RELEASE_FILE"
 
-gpg --batch --export --armor "$KEY_ID" > "$DOCS_DIR/run-archive-keyring.gpg"
+gpg --batch --export "$KEY_ID" > "$DOCS_DIR/run-archive-keyring.gpg"
 
 echo "Updated apt repo for run ${VERSION} ($ARCH)"
