@@ -4,10 +4,10 @@ Architecture: amd64
 Maintainer: Esubalew Chekol <esubalewchekol6@gmail.com>
 Depends: libc6 (>= 2.31)
 Filename: docs/pool/main/r/run/run_0.6.1_amd64.deb
-Size: 7293608
-MD5sum: be950bf7102017e30a43a368697d5652
-SHA1: 4ccefbe4e576011833080fdba60f8872978f35bb
-SHA256: b9ac0b9b74b057d9bdf7251cca71632a64687c961b992db6e2227bda14aa08b2
+Size: 7292592
+MD5sum: 3c9abd20ab41d220c8c92b5fe5128ab0
+SHA1: 584b94be2350ac23cf028f84eb8d0d4a4aabb388
+SHA256: 8093119f4958b64e6cca11f0224e28a1f7bed1ff942ce0977648962c6cd9ff4e
 Section: utils
 Priority: optional
 Description: Universal multi-language runner and smart REPL
