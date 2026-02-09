@@ -95,8 +95,10 @@ DIST_DIR="$DOCS_DIR/dists/$DIST/main/binary-$ARCH"
 mkdir -p "$POOL_DIR" "$DIST_DIR"
 cp "$DEB_PATH" "$POOL_DIR/"
 
-dpkg-scanpackages --arch "$ARCH" "$DOCS_DIR/pool" > "$DIST_DIR/Packages"
-gzip -9c "$DIST_DIR/Packages" > "$DIST_DIR/Packages.gz"
+pushd "$DOCS_DIR" > /dev/null
+dpkg-scanpackages --arch "$ARCH" "pool" > "dists/$DIST/main/binary-$ARCH/Packages"
+gzip -9c "dists/$DIST/main/binary-$ARCH/Packages" > "dists/$DIST/main/binary-$ARCH/Packages.gz"
+popd > /dev/null
 
 RELEASE_FILE="$DOCS_DIR/dists/$DIST/Release"
 {
