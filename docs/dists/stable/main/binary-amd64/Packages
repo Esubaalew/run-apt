@@ -1,7 +1,7 @@
 Package: run
 Version: 0.6.1
 Architecture: amd64
-Maintainer: Esubalew Chekol <esubalewchekol6@gmail.com>
+Maintainer: Esubaalew Chekol <esubalewchekol6@gmail.com>
 Depends: libc6 (>= 2.31)
 Filename: pool/main/r/run/run_0.6.1_amd64.deb
 Size: 7293608
